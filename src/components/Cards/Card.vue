@@ -1,11 +1,13 @@
 <template>
-  <div class="card"
-       :class="[
+  <div
+    class="card"
+    :class="[
          {'card-plain': plain},
          {'card-raised': raised},
          {[`card-${type}`]: type}
        ]"
-       :data-background-color="color">
+    :data-background-color="color"
+  >
     <h6 class="card-category" v-if="$slots.category || category">{{category}}</h6>
     <div class="card-image" v-if="$slots.image">
       <slot name="image"></slot>
@@ -32,29 +34,29 @@
 
     <slot name="raw-content"></slot>
 
-    <hr v-if="$slots.footer && !noFooterLine">
+    <hr v-if="$slots.footer && !noFooterLine" />
     <div class="card-footer" v-if="$slots.footer">
       <slot name="footer"></slot>
     </div>
   </div>
 </template>
 <script>
-  export default {
-    name: 'card',
-    props: {
-      type: String,
-      title: String,
-      subTitle: String,
-      category: String,
-      color: String,
-      description: String,
-      noFooterLine: Boolean,
-      plain: Boolean,
-      raised: Boolean,
-      cardBodyClasses: [String, Object, Array],
-      headerClasses: [String, Object, Array]
-    }
-  }
+export default {
+  name: 'card',
+  props: {
+    type: String,
+    title: String,
+    subTitle: String,
+    category: String,
+    color: String,
+    description: String,
+    noFooterLine: Boolean,
+    plain: Boolean,
+    raised: Boolean,
+    cardBodyClasses: [String, Object, Array],
+    headerClasses: [String, Object, Array],
+  },
+};
 </script>
 <style>
 </style>
