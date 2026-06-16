@@ -20,14 +20,14 @@
     "vue2-transitions": "^0.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
+    "@babel/cli": "^8.0.0",
+    "@babel/core": "^8.0.0",
+    "@babel/preset-env": "^8.0.0",
     "@vue/cli-plugin-babel": "^5.0.0",
     "@vue/cli-plugin-eslint": "^5.0.0",
     "@vue/cli-plugin-pwa": "^5.0.0",
     "@vue/cli-service": "^5.0.0",
-    "@babel/eslint-parser": "^7.11.0",
+    "@babel/eslint-parser": "^8.0.0",
     "babel-plugin-component": "^1.1.1",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^10.0.0",
